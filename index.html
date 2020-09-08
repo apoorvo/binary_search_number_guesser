@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Beat The Machine</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Can you beat the machine?</h1>
+            <h3>Rules:</h3>
+            <p>
+                A simple game to test the power of machine over your mind. 
+                Pick a range and think of a number in that range, then the machine will guess it under the given no. of guesses.
+                Simple enough? Now let's see if you can beat the machine.
+
+                <br />
+                <br />
+            </p>
+            <h5 id="range_show"></h5>
+            <input type="range" min="100" max="1000000000" step="10" id="max_input">
+            <p id="guesses_show">Guesses required: </p>
+            <p id="success_chance" >Success Probablity: </p>
+        </div>
+        <div class="machine">
+            <button id="start">Let's start</button>
+            <div id="guesser">
+                <h3 id="guess">Guess:</h3>
+                <h5>Guesses left</h5>
+                <h4 id ="guess_left"></h4>
+                <button id="higher">Higher</button>
+                <button id="lower">Lower</button>
+                <button id="correct">You got it!</button>
+            </div>
+            <h2 id="result">Your number is: </h2>
+            <button id="again">Try Again?</button>
+
+        </div>
+
+        <div class="footer">
+            <div class="left">
+                <p>Beat The Machine is a demonstration of the logarithmic growing time of binary search algorithm. Hope you enjoy it.</p>
+            </div>
+
+            <div class="right">
+                <h3>Made by: Apoorvo Chakraborty</h3>
+                <a href="https://github.com/apoorvo" target="blank"><img src="img/github-logo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

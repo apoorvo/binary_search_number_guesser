@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.wrapper{
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    min-height: 40vh;
+    padding-left: 40px;
+    padding-top: 20px;
+    background: black;
+    color: white;
+}
+
+.header h1{
+    font-weight: normal;
+    font-size: 3vw;
+}
+
+.header h3{
+    font-size: 2vw;
+   
+
+}
+
+.header h5{
+    font-size: 1.5vw;
+}
+
+.header p{
+    font-size: 1.5vw;
+    width: 70%;
+}
+
+
+
+.machine{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.machine #start{
+    font-size: 3vw;
+    padding:20px;
+    background: #D13838;
+    color: white;
+}
+
+#guesser{
+    margin: auto;
+    width: 90%;
+}
+
+#guesser h3{
+    font-size: 4vw;
+}
+
+#guesser h5, #guess_left{
+    font-size: 2vw;
+}
+
+#guesser h5{
+    margin-top: 1.7vw;
+}
+
+#guess_left{
+    color: #D13838;
+    margin-top: 0;
+
+}
+
+.machine button{
+    padding: 20px 25px 20px 25px;
+    font-size: 2vw;   
+    color: white;
+    margin-top: 2vw;
+}
+
+#higher{
+    background: #00c2cb;
+}
+
+#lower{
+    background: #D13838;
+}
+
+#correct{
+    background: #38D286;
+
+}
+
+#again{
+    background: #D13838;
+    color: white;
+    font-size: 5vw;
+}
+
+.footer{
+    width: 100%;
+    background: #D13838;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5vw;
+    padding-top: 50px;
+}
+.footer .left{
+    width: 40%;
+    
+}
+
+.footer img{
+    width: 60px;
+}
+
+@media screen and (max-width:768px){
+    .header h1{
+        font-size: 10vw;
+    }
+
+    .header h3{
+        font-size: 5vw;
+        margin-top: 4vw;
+    }
+
+    .header h5{
+        font-size: 4vw;
+    }
+
+    .header p{
+        font-size: 4vw;
+    }
+
+    #start{
+        margin-left: 20px;
+    }
+
+    #guesser{
+        position: relative;
+        top: 10vw;
+    }
+
+    #guesser h3{
+        font-size: 10vw;
+    }
+
+    #guesser h5, #guess_left{
+        font-size: 6vw;
+    }
+
+    #lower,#higher,#correct{
+        display: block;
+        width: 80%;
+        font-size: 6vw;
+    }
+
+    .machine #start{
+        font-size: 10vw;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footer .left, .footer .right{
+        flex-basis: 100%;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .footer .right{
+        padding-top: 20px;
+    }
+}
